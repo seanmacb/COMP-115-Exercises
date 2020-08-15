@@ -1,0 +1,36 @@
+# firstgraphics.py
+from graphics import *
+def main():
+    win= GraphWin("Title",800,800)
+    p1= Point(1,1)
+    p2= Point(5,5)
+    p3= Point(10,10)
+    p4= Point(50,50)
+    p1.draw(win)
+    p2.draw(win)
+    p3.draw(win)
+    p4.draw(win)
+    
+    line=Line(Point(200,0),Point(0,200))
+    line.setFill("red")
+    line.draw(win)
+    
+    
+    rect=Rectangle(Point(200,200),Point(600,600))
+    rect.draw(win)
+    rect.setFill("blue")
+    line2=Line(Point(250,350),Point(350,300))
+    line2.setFill("red")
+    line2.draw(win)
+    line3=Line(Point(450,300),Point(550,350))
+    line3.setFill("red")
+    line3.draw(win)
+    line4=Line(Point(400,400),Point(375,425))
+    line4.setFill("red")
+    line4.draw(win)
+    line5=Line(Point(375,425),Point(425,425))
+    line5.setFill("red")
+    line5.draw(win)
+    input("Press <enter> to continue...")
+    win.close()
+main()
